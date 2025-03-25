@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection - Hustle Fits</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: black;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+        .collection-container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .collection-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .item {
+            background: #121212;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 200px;
+            text-align: center;
+        }
+        .item img {
+            width: 150px;
+            border-radius: 10px;
+        }
+        .item p {
+            font-size: 18px;
+            margin: 10px 0;
+            color: white;
+        }
+        .add-to-cart {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .add-to-cart:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Hustle Fits</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="collection.html">Collection</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="collection-container">
+    <h2>Collection</h2>
+    <div class="collection-items">
+        <div class="item">
+            <img src="shirt.png" alt="Shirt">
+            <p>Casual Shirt - ₱250</p>
+            <button class="add-to-cart" onclick="addToCart('Casual Shirt', 250)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="jacket.png" alt="Jacket">
+            <p>Stylish Jacket - ₱400</p>
+            <button class="add-to-cart" onclick="addToCart('Stylish Jacket', 400)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="jeans.png" alt="Jeans">
+            <p>Denim Jeans - ₱350</p>
+            <button class="add-to-cart" onclick="addToCart('Denim Jeans', 350)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="dress.png" alt="Dress">
+            <p>Elegant Dress - ₱500</p>
+            <button class="add-to-cart" onclick="addToCart('Elegant Dress', 500)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="shorts.png" alt="Shorts">
+            <p>Comfy Shorts - ₱200</p>
+            <button class="add-to-cart" onclick="addToCart('Comfy Shorts', 200)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="cap.png" alt="Shorts">
+            <p>Baseball Cap- ₱200</p>
+            <button class="add-to-cart" onclick="addToCart('Baseball Cap', 200)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="winter.png" alt="Shorts">
+            <p>Winter Jacket - ₱500</p>
+            <button class="add-to-cart" onclick="addToCart('Winter Jacket', 200)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="cargo.png" alt="Shorts">
+            <p>Cargo Pants - ₱250</p>
+            <button class="add-to-cart" onclick="addToCart('Cargo Pants', 200)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="ripped.png" alt="Shorts">
+            <p>Blacked Cargo Pants - ₱250</p>
+            <button class="add-to-cart" onclick="addToCart('Black Cargo Pants', 200)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="cshorts.png" alt="Shorts">
+            <p>Cargo Shorts - ₱250</p>
+            <button class="add-to-cart" onclick="addToCart('Cargo Shorts', 200)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="straight.png" alt="Shorts">
+            <p>Straight-Leg Pants - ₱250</p>
+            <button class="add-to-cart" onclick="addToCart('Straight-Leg Pants', 200)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="sweatpants.png" alt="Shorts">
+            <p>Sweatpants - ₱200</p>
+            <button class="add-to-cart" onclick="addToCart('Sweatpants', 200)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="polo.png" alt="Shorts">
+            <p> Polo Shirt - ₱400</p>
+            <button class="add-to-cart" onclick="addToCart('Polo Shirt', 200)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="compression.png" alt="Shorts">
+            <p>Fitted Compression Shirt - ₱250</p>
+            <button class="add-to-cart" onclick="addToCart('Fitted Compression Shirt', 200)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="zipup.png" alt="Shorts">
+            <p>Zip-Up Techwear Hoodie - ₱300</p>
+            <button class="add-to-cart" onclick="addToCart('Zip-Up Techwear Hoodie', 200)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="classic.png" alt="Shorts">
+            <p>Classic Black Hoodie - ₱300</p>
+            <button class="add-to-cart" onclick="addToCart('Classic Black Hoodie', 200)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="laceblouse.png" alt="Shorts">
+            <p>Elegant Lace Blouse - ₱500</p>
+            <button class="add-to-cart" onclick="addToCart('Elegant Lace Blouse', 200)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="oversizedt.png" alt="Shorts">
+            <p>Oversized Tee - ₱250</p>
+            <button class="add-to-cart" onclick="addToCart('Oversized Tee', 200)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="vneck.png" alt="Shorts">
+            <p>V-Neck - ₱300</p>
+            <button class="add-to-cart" onclick="addToCart('V-Neck', 200)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="offshoulder.png" alt="Shorts">
+            <p>Crop Top - ₱300</p>
+            <button class="add-to-cart" onclick="addToCart('Crop Top', 200)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="floral.png" alt="Shorts">
+            <p>Floral Shirt - ₱500</p>
+            <button class="add-to-cart" onclick="addToCart('Floral Shirt', 200)">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<script>
+    function addToCart(name, price) {
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        cart.push({ name, price });
+        localStorage.setItem("cart", JSON.stringify(cart));
+        alert(name + " has been added to the cart!");
+    }
+</script>
+
+</body>
+</html>
