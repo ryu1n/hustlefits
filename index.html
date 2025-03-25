@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hustle Fits</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: black;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: url('fashion-banner.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 18px;
+        }
+        .hero button {
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .hero button:hover {
+            background-color: black;
+            color: white;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+        .product {
+            background-color: #1e1e1e;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            width: 220px;
+        }
+        .product img {
+            width: 100%;
+            max-height: 180px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+        .product h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .product p {
+            font-size: 16px;
+            color: #f5a623;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hustle Fits</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="collection.html">Collection</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Welcome to Hustle Fits</h1>
+    <p>Style that speaks for itself.</p>
+    <button onclick="window.location.href='collection.html'">View Collection</button>
+</div>
+
+<div class="container">
+    <h2>Latest Collection</h2>
+    <div class="products">
+        <div class="product">
+            <img src="shirt.png" alt="Casual Shirt">
+            <h3>Casual Shirt</h3>
+        </div>
+
+        <div class="product">
+            <img src="jacket.png" alt="Stylish Jacket">
+            <h3>Stylish Jacket</h3>
+        </div>
+
+        <div class="product">
+            <img src="jeans.png" alt="Denim Jeans">
+            <h3>Denim Jeans</h3>
+        </div>
+
+        <div class="product">
+            <img src="dress.png" alt="Elegant Dress">
+            <h3>Elegant Dress</h3>
+        </div>
+
+        <div class="product">
+            <img src="shorts.png" alt="Comfy Shorts">
+            <h3>Comfy Shorts</h3>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
